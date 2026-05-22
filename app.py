@@ -15,7 +15,7 @@ def print_all_aircraft():
     cursor.execute (sql)
     results = cursor.fetchall()
     #loop through all the results
-    print(f"name                        speed   max_g climb range payload")
+    print(f"name                           speed   max_g climb range payload")
     for fighter in results:
          print(f"{fighter[1]:<30}{fighter[2]:<8}{fighter[3]:<6}{fighter[4]:<6}{fighter[5]:<6}{fighter[6]:<6}")
     #loop finished here
@@ -30,7 +30,7 @@ def print_all_aircraft_by_speed():
     cursor.execute(sql)
     results = cursor.fetchall()
     #loop through all the results 
-    print(f"name                         speed max_g climb range payload")
+    print(f"name                          speed max_g climb range payload")
     for fighter in results:
         print(f"{fighter [1]:<30}{fighter [2]:<8}{fighter[3]:<6}{fighter[4]:<6}{fighter[5]:<6}{fighter[6]:<6}")
     #loop finished here 
@@ -45,11 +45,11 @@ def print_all_aircraft_by_g():
     cursor.execute(sql)
     results = cursor.fetchall()
     #loop through all the results
-    print(f"name。                        speed max_g climb range payload")
+    print(f"name                          speed max_g climb range payload")
     for fighter in results:
         print(f"{fighter [1]:<30}{fighter [2]:<8}{fighter [3]:<6}{fighter [4]:<6}{fighter [5]:<6}{fighter[6]:<6}")
     #loop finished here 
-    db. close ()
+    db. close()
 
 
 def print_all_aircraft_by_climb():
@@ -60,11 +60,11 @@ def print_all_aircraft_by_climb():
     cursor.execute(sql)
     results = cursor.fetchall()
     #loop through all the results
-    print (f"name.                        speed   max_g climb range payload")
+    print (f"name                         speed   max_g climb range payload")
     for fighter in results:
         print(f"{fighter [1]:<30}{fighter [2]:<8}{fighter [3]:<6}{fighter [4]:<6}{fighter [5]:<6}{fighter[6]:<6}")
     #loop finished here 
-    db. close ()
+    db. close()
 
 
 def print_all_aircraft_by_range () :
@@ -75,11 +75,11 @@ def print_all_aircraft_by_range () :
     cursor.execute (sql)
     results = cursor.fetchall()
     #loop through all the results
-    print(f"name.                        speed   max_g climb range payload")
+    print(f"name                          speed   max_g climb range payload")
     for fighter in results:
         print(f"{fighter [1]:<30}{fighter [2]:<8}{fighter [3]:<6}{fighter [4]:<6}{fighter [5]:<6}{fighter[6]:<6}")
     #loop finished here 
-    db. close ()
+    db. close()
 
 
 def print_all_aircraft_by_payload() :
@@ -90,11 +90,11 @@ def print_all_aircraft_by_payload() :
     cursor.execute (sql)
     results = cursor.fetchall ()
     #loop through all the results
-    print(f"name.                        speed   max_g climb range payload")
+    print(f"name                          speed   max_g climb range payload")
     for fighter in results:
         print(f"{fighter [1]:<30}{fighter [2]:<8}{fighter [3]:<6}{fighter [4]:<6}{fighter [5]:<6}{fighter[6]:<6}")
     #loop finished here 
-    db. close ()
+    db. close()
 
 
 #main code
@@ -115,13 +115,13 @@ What would you like to do.
         print_all_aircraft_by_speed ()
     elif user_input == "3":
         print_all_aircraft_by_climb ()
-    elif user _input == "4":
+    elif user_input == "4":
         print_all_aircraft_by_range()
     elif user_input == "5":
         print_all_aircraft_by_climb ()
     elif user_input == "6":
         print_all_aircraft_by_payload ()
-    elif user _input== "7":
+    elif user_input== "7":
         break
     else:
-        print ("That was not an option\n")
+        print("That was not an option\n")
