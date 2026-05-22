@@ -110,7 +110,8 @@ What would you like to do.
 6. Print all aircraft sorted by payload
 7. Exit
 ''')
-    if user_input == "1": print_all_aircraft()
+    if user_input == "1": 
+        print_all_aircraft()
     elif user_input == "2":
         print_all_aircraft_by_speed ()
     elif user_input == "3":
@@ -125,3 +126,6 @@ What would you like to do.
         break
     else:
         print("That was not an option\n")
+
+
+
